@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'LeagueSpartanMedium';
+    src: url(./assets/fonts/LeagueSpartan-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'LeagueSpartanBold';
+    src: url('./assets/fonts/LeagueSpartan-Bold.ttf');
+}
+
+@layer{
+    body {
+        font-family: 'LeagueSpartanMedium';
+        @apply text-base lg:text-lg
+    }
+}
